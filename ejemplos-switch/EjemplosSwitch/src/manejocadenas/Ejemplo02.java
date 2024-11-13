@@ -16,7 +16,8 @@ public class Ejemplo02 {
         
         pais = "Ecuador";
         //      0123456
-        char letra = pais.charAt(0);
+        char letra = pais.charAt(3); //charat es una cadena
+                                     // hay que contarn desde  0
         System.out.printf("%s\n", letra);
         
     }
