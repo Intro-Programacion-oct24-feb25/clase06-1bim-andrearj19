@@ -28,7 +28,7 @@ public class ComercioTres {
         double coeficiente = 0.6;
         double bono  = 0;
         
-        double porcentajeSeguro = 8;
+        double porcentajeSeguro = 10;
         double adicionalSeguro;
         
         double sueldoFinal; 
@@ -43,12 +43,37 @@ public class ComercioTres {
         edad = entrada.nextInt();
 
         System.out.println("Ingrese el sueldo básico por favor");
-        sueldoBasico = entrada.nextDouble();        
+        sueldoBasico = entrada.nextDouble();     
         
+        System.out.println("Ingrese el decuento por favor");
+        sueldoBasico = entrada.nextDouble(); 
         System.out.println("Ingrese el número de productos vendidos "
                 + "por favor");
         numeroProductos = entrada.nextInt();
         
+        // opcion 1
+        //if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
+            //porcentajeSeguro = porcentajeSeguro + 0;
+        //} else {
+            //porcentajeSeguro = 10;
+        //}
+        // si funciona porque al imprimirlo si no se cumple la condicon salta
+        //error.
+        // opcion 2
+        //if (porcentajeSeguro > 15) {
+        //    porcentajeSeguro = 10;
+         //}
+        // si funciona porque al imprimirlo si no se cumple la condicon salta
+        //error.
+         // opción 3
+        if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+
+        // opción 4
+        //if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
+          //  porcentajeSeguro = 10;
+        //}
         // calcular la productividad
         productividad = numeroProductos * coeficiente;
         //todo esto es un condicional anidado
