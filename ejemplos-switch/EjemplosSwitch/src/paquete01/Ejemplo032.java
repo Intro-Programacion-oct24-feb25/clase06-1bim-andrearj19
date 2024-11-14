@@ -29,6 +29,9 @@ public class Ejemplo032 {
         String nombre = entrada.nextLine();
         // nombre = "atacames"
         nombre = nombre.toLowerCase();
+        
+        String nombre2 = nombre.substring(0,1);//utilizo una segunda
+        //variable axuliar para no modificar ninguno de los case
         char valor = nombre.charAt(0); // obtener el primer caracter de una
                                        // cadena
         //  L   o   j   a
@@ -43,7 +46,7 @@ public class Ejemplo032 {
                 
                 
                 System.out.printf("Nombre con inicial %s de %s\n", 
-                        valor, nombre.toLowerCase());
+                        nombre2.toUpperCase(), nombre.toLowerCase());
                 break;
             
             

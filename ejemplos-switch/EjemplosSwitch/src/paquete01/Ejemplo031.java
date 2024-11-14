@@ -24,8 +24,15 @@ public class Ejemplo031 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
-        System.out.println("Ingrese el nombre de una ciudad del Ecuador");
+        System.out.println("Ingrese el nombre su nombre");
+        System.out.println("Ingrese su apellido");
+        System.out.printf("Ingrese su edad");
+        System.out.printf("Ingrese a la universidad que pertenece");
         String nombre = entrada.nextLine();
+        String apellido = entrada.nextLine();
+        String universidad = entrada.nextLine();
+        String edad = entrada.nextLine();
+        
         // nombre = "atacames"
         char valor = nombre.charAt(0); // obtener el primer caracter de una
         // ANA DIAZ con edad 19, es estudiante de UTPL
@@ -39,7 +46,9 @@ public class Ejemplo031 {
             case 'o':
             case 'u':
                 System.out.printf("Nombre con inicial %s de %s\n", 
-                        valor, nombre.toLowerCase());
+                        nombre.toUpperCase(),apellido.toUpperCase(),
+                        edad,universidad);
+                
                 break;
             
             default:
@@ -50,4 +59,4 @@ public class Ejemplo031 {
         }
         
     }
-}
+}//%d de %s de %d",
