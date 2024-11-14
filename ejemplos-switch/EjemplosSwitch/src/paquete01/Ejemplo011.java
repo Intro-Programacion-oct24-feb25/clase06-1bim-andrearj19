@@ -39,12 +39,18 @@ public class Ejemplo011 {
                         + "de la semana", cadena.toUpperCase());
                 break;
             
-            
+            case "Jueves":
+                System.out.printf("%s es el primer día "
+                        + "de la semana", cadena.toUpperCase());
+                break;
             case "viernes":
                 System.out.printf("%s es el quinto día "
                         + "de la semana", cadena.toUpperCase());
                 break;
-            
+            case "Sabado":
+                System.out.printf("%s es el primer día "
+                        + "de la semana", cadena.toUpperCase());
+                break;
             case "domingo":
                 System.out.printf("%s, es el séptimo día "
                         + "de la semana", cadena.toUpperCase());
