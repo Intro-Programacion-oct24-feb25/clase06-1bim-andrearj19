@@ -24,14 +24,17 @@ public class Ejemplo031 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
-        System.out.println("Ingrese el nombre su nombre");
-        System.out.println("Ingrese su apellido");
-        System.out.printf("Ingrese su edad");
-        System.out.printf("Ingrese a la universidad que pertenece");
+        System.out.println("Ingrese el nombre su nombre"); 
         String nombre = entrada.nextLine();
+        System.out.println("Ingrese su apellido");
         String apellido = entrada.nextLine();
-        String universidad = entrada.nextLine();
+        System.out.printf("Ingrese su edad");
         String edad = entrada.nextLine();
+        System.out.printf("Ingrese a la universidad que pertenece");
+        String universidad = entrada.nextLine();
+        
+        
+        
         
         // nombre = "atacames"
         char valor = nombre.charAt(0); // obtener el primer caracter de una
@@ -47,7 +50,7 @@ public class Ejemplo031 {
             case 'u':
                 System.out.printf("Nombre con inicial %s de %s\n", 
                         nombre.toUpperCase(),apellido.toUpperCase(),
-                        edad,universidad);
+                        "%sedad,%suniversidad");
                 
                 break;
             
