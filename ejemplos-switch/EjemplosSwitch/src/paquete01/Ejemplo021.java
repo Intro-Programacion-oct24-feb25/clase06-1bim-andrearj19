@@ -80,7 +80,7 @@ public class Ejemplo021 {
                         
         }
             System.out.printf("Usted ha nacido el %d de %s de %d",
-                        diaNacimiento, mescadena, yearNacimiento);
+                        diaNacimiento, mescadena.toUpperCase(), yearNacimiento);
         }
 
     }
