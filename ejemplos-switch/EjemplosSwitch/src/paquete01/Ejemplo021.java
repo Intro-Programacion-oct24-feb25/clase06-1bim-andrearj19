@@ -73,8 +73,8 @@ public class Ejemplo021 {
             case 12:
                 mescadena = "diciembre";
                 break;
-                default:
-                System.out.println("Opción incorrecta");
+                default://el default no es obligatorio de colocar
+                System.out.println("Mes no reconocido");
                 break;
                 
                         
